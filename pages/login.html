@@ -1,0 +1,60 @@
+{% extends 'templates/base.html' %}
+
+{% block content %}
+
+<link href="static/css/custom/login.css" rel="stylesheet" media="screen">
+<link href="static/css/bundles/bootstrap.min.css" rel="stylesheet">
+<link href="static/css/bundles/floating-labels.css" rel="stylesheet">
+
+{% if bad_login == "credentials" %}
+    <div class="alert alert-danger" role="alert" style="width: 60%; margin: auto; text-align: center; margin-top: 5%; ">
+        Invalid credentials, please check your input and try again
+        <script>document.getElementById("inputPassword").value = null</script>
+    </div>
+{% endif %}
+
+{% if bad_login == "csrf" %}
+    <div class="alert alert-danger" role="alert" style="width: 60%; margin: auto; text-align: center; margin-top: 5%; ">
+        CSRF Error: What do you think you're doing home slice.... 0.o
+        <script>document.getElementById("inputPassword").value = null</script>
+    </div>
+{% endif %}
+
+{% if bad_login == "other" %}
+    <div class="alert alert-danger" role="alert" style="width: 60%; margin: auto; text-align: center; margin-top: 5%; ">
+        An unknown error occured, please contact the site owner
+        <script>document.getElementById("inputPassword").value = null</script>
+    </div>
+{% endif %}
+
+<form class="form-signin center" action="/login" method="POST">
+
+    <div class="form-label-group">
+        <input type="username" id="inputUsername" name="username" value="{{request.form.username}}" class="form-control" placeholder="Username" required>
+        <label for="inputUsername">Username</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" value="{{request.form.password}}" required>
+        <label for="inputPassword">Password</label>
+    </div>
+
+    <button class="btn btn-primary btn-block custom-button" style="display: block;" type="submit">
+        Login
+    </button>
+
+    <a href="/register" style="text-decoration: none;">
+        <button2 class="btn btn-secondary btn-block custom-button" style="display: block;">
+            Register
+        </button2>
+     </a>
+</form>
+
+<!-- acquire jquery-->
+<script type="text/javascript" language="javascript" src="static/js/bundles/jquery-3.6.0.min.js"></script>
+
+<!-- acquire bootstrap-->
+<script src="static/js/bundles/bootstrap.min.js"></script>
+
+{% endblock %}
+  

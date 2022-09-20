@@ -1,0 +1,21 @@
+{% extends 'templates/base.html' %}
+
+{% block content %}
+<link href="static/css/custom/about.css" rel="stylesheet" media="screen">
+
+
+<div class="content">
+    <img class="body-img" src="/static/img/brand/blue-full.svg"/>
+    <h4 class="title">Web Shell</h4>
+    <p class="body-text">
+        This product is essentially a fork of pyxtermjs with a management console for instantiating and deploying sessions. The backend is an autoscaling Kubernetes cluster that dynamically deploys via image. Administrators are able to define custom images and sessions are fully interactive over routed WebSockets. This software is open source and developed under the MIT License, please contribute whatever features you feel would be benifical.
+    </p>
+
+    <h4 class="title">Developer Contact</h4>
+    <p class="body-text" style="text-align: center; margin-top: 20px;">
+        Nate Singer<br>
+        nathaniel.singer@shiftcyber.com
+    </p>
+</div>
+
+{% endblock %}

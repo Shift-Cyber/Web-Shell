@@ -1,0 +1,40 @@
+.nav-custom {
+    flex-wrap: nowrap;
+}
+
+.nav-custom-img {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.nav-custom-item {
+    min-width: max-content; margin: 0 5px;
+}
+
+.nav-custom-usertext {
+    display:inline-block; 
+    min-width: max-content; 
+    padding-right: 10px; 
+
+    color: rgba(255,255,255,.75);
+    
+    font-weight: bold;
+    text-decoration:none
+}
+
+.nav-custom-usertext:hover {
+    color: rgba(255,255,255,.95);
+}
+
+.nav-custom-footer {
+    position: fixed; 
+    width: 100%; 
+    bottom: 0px; 
+
+}
+
+.nav-custom-footer-text {
+    color: rgba(255,255,255,.55);
+    line-height: 10px;
+}

@@ -1,0 +1,22 @@
+.content {
+    width: 550px; 
+    margin: auto;
+    margin-top: 50px;
+}
+
+.body-img {
+    width:60%;
+    display: block;
+    margin: auto;
+}
+
+.title {
+    text-align:center;
+    margin-top: 50px;
+    color: rgba(255,255,255,.85);
+}
+
+.body-text {
+    text-align: justify; 
+    color: rgba(255,255,255,.65);
+}
