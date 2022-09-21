@@ -1,0 +1,78 @@
+.core {
+    height: 89vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+}
+
+.control-bar {
+    height:70px;
+
+    flex-grow: 0;
+    margin-bottom: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.control-bar-button {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 5px;
+}
+
+.control-bar-button-img {
+    height: 45px;
+    width: 45px;
+}
+
+.control-bar-dropdown {
+    height: 50px;
+    width: 400px;
+    text-align: left;
+}
+
+.control-bar-countdown-text {
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+    color:white;
+
+    margin-right: 10px;
+}
+
+.shell-parent {
+    background-color: #202B33;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding:15px;
+
+    flex-grow: 1;
+
+}
+
+.shell {
+    height:100%;
+    width:100%;
+}
+
+.status-bar {
+    background-color: green;
+    border: 2px solid rgb(0, 90, 0);
+    border-radius: 5px;
+    height:25px;
+
+    flex-grow: 0;
+    margin: 10px 0;
+    margin-top: 5px;
+
+    line-height: 20px;
+    text-align: center;
+    font-size: 15px;
+}
