@@ -55,7 +55,6 @@ export class TerminalUI {
    */
   attachTo(container) {
     this.terminal.open(container);
-    this.prompt();
   }
 
   clear() {

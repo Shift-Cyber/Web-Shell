@@ -1,7 +1,7 @@
 import { TerminalUI } from "./TerminalUI";
 import io from "socket.io-client";
 
-const serverAddress = "http://192.168.1.51:8080";
+const serverAddress = "http://ws.webshell.hackabit.com";
 
 function connectToSocket(serverAddress) {
   return new Promise(res => {
