@@ -13,7 +13,7 @@ import threading
 app = Flask(__name__, template_folder="pages", static_folder="static", static_url_path="/static")
 
 # DB Connction Details
-app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_HOST'] = '35.245.122.87'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'password'
 app.config['MYSQL_DB'] = 'webshell'
